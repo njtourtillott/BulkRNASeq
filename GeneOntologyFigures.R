@@ -8,7 +8,7 @@ library(ggplot2)
 library(ggrepel)
 library(dplyr)
 
-cts.file <- "/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/STAR_Gene_Counts.csv"
+cts.file <- "STAR_Gene_Counts.csv"
 cts <- read.table(cts.file,sep=",",header=TRUE,stringsAsFactors=FALSE)
 any(duplicated(rownames(cts$Gene_ID)))
 rownames(cts) <- cts$Gene_ID
@@ -16,10 +16,10 @@ cts$Gene_ID <- NULL
 universe.entrez <- na.omit(mapIds(org.Hs.eg.db, rownames(cts), 'ENTREZID', 'SYMBOL'))
 
 # Read In Lists
-compUp <- read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/overlappingGenes/X20MSTO.TAZposTEAD_vs_X20MSTO.sgCTRL.DMSO_minus_X20MSTO.sgCTRL.TEAD_vs_X20MSTO.sgCTRL.DMSO_and_X20MSTO.TAZ_vs_X20MSTO.sgCTRL.DMSO_Up.csv')
+compUp <- read.csv('sampleUp.csv')
 up.genes <- compUp$X0
-comparison<- 'X20MSTO.TAZposTEAD_vs_X20MSTO.sgCTRL.DMSO_minus_X20MSTO.sgCTRL.TEAD_vs_X20MSTO.sgCTRL.DMSO_and_X20MSTO.TAZ_vs_X20MSTO.sgCTRL.DMSO'
-compDown <-read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/overlappingGenes/X20MSTO.TAZposTEAD_vs_X20MSTO.sgCTRL.DMSO_minus_X20MSTO.sgCTRL.TEAD_vs_X20MSTO.sgCTRL.DMSO_and_X20MSTO.TAZ_vs_X20MSTO.sgCTRL.DMSO_Down.csv')
+comparison<- 'sample'
+compDown <-read.csv('sampleDown.csv')
 down.genes <-compDown$X0
 
 
