@@ -12,18 +12,18 @@ library(plyr)
 
 
 ## Step 1: Set genes to index -- DONE
-regTable <- read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/comparisonTable.csv', row.names='X0')
+regTable <- read.csv('comparisonTable.csv', row.names='X0')
 regTable$emtSig <- 0
 regTable$integrin <-0
 
-EMT <- read.csv('//Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/EMT/HallMark_EMT_Sig.csv')
-EMT$emtSig <- 1
-rownames(EMT) <-EMT$gene
-for(i in rownames(EMT)){
-  regTable[i, 'emtSig'] <- 1
+Sig <- read.csv('Sig.csv')
+Sig$pathwaySig <- 1
+rownames(Sig) <-Sig$gene
+for(i in rownames(Sig)){
+  regTable[i, 'pathwaySig'] <- 1
 }
 
-integrin <- read.delim('/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/String_integrinMediatedSignalingPathway.tsv', sep = '\t')
+integrin <- read.delim('String_integrinMediatedSignalingPathway.tsv', sep = '\t') # From String-db
 integrin$integrin <-1
 rownames(integrin) <- integrin$X.node
 for(i in rownames(integrin)){
@@ -148,7 +148,4 @@ down10List <- subset(list10, PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_D
 write.csv(up10List, '/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/10DayUpRegulatedOverlap_Integrin.csv')
 write.csv(down10List, '/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/10DayDownRegulatedOverlap_Integrin.csv')
 
-# emtIntegrin <- regTable[,c('integrin', 'emtSig')]
-# emtIntegrinList <- subset(emtIntegrin, integrin == 1 & emtSig == 1)
-# write.csv(emtIntegrinList,'/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/EMT_IntegrinOverlap.csv' )
 
