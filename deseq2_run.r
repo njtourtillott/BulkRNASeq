@@ -24,76 +24,11 @@ comparisons[["PC9.OsiplusJH_24_vs_PC9.Osi_24"]][["batch"]] <- c("1","2",
 comparisons[["PC9.OsiplusJH_24_vs_PC9.Osi_24"]][["title"]] <- "Change in Expression\nPC9.OsiplusJH_24_vs_PC9.Osi_24"
 comparisons[["PC9.OsiplusJH_24_vs_PC9.Osi_24"]][["contrast"]] <- c("condition","PC9.OsiplusJH_24", "PC9.Osi_24")
 
-#2
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]] <- list() 
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]][["columns"]] <- c("X4006.Osi_24_1", "X4006.Osi_24_2", "X4006.OsiplusJH_24_1", 'X4006.OsiplusJH_24_2')
-
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]][["condition"]] <- c("X4006.Osi_24", 'X4006.Osi_24', 'X4006.OsiplusJH_24','X4006.OsiplusJH_24' 
-)
-
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]][["batch"]] <- c("1","2",
-                                                                '1', '2')
-
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]][["title"]] <- "Change in Expression\nX4006.OsiplusJH_24_vs_X4006.Osi_24"
-comparisons[["X4006.OsiplusJH_24_vs_X4006.Osi_24"]][["contrast"]] <- c("condition","X4006.OsiplusJH_24", "X4006.Osi_24")
-
-#3
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]] <- list()
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]][["columns"]] <- c("PC9.Osi_72_1", "PC9.Osi_72_2", "PC9.OsiplusJH_72_1", 'PC9.OsiplusJH_72_2')
-
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]][["condition"]] <- c("PC9.Osi_72", 'PC9.Osi_72', 'PC9.OsiplusJH_72','PC9.OsiplusJH_72' 
-)
-
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]][["batch"]] <- c("1","2",
-                                                                '1', '2')
-
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]][["title"]] <- "Change in Expression\nPC9.OsiplusJH_72_vs_PC9.Osi_72"
-comparisons[["PC9.OsiplusJH_72_vs_PC9.Osi_72"]][["contrast"]] <- c("condition","PC9.OsiplusJH_72", "PC9.Osi_72")
-
-#4
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]] <- list() 
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]][["columns"]] <- c("X4006.Osi_72_1", "X4006.Osi_72_2", "X4006.OsiplusJH_72_1", 'X4006.OsiplusJH_72_2')
-
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]][["condition"]] <- c("X4006.Osi_72", 'X4006.Osi_72', 'X4006.OsiplusJH_72','X4006.OsiplusJH_72' 
-)
-
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]][["batch"]] <- c("1","2",
-                                                                    '1', '2')
-
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]][["title"]] <- "Change in Expression\nX4006.OsiplusJH_72_vs_X4006.Osi_72"
-comparisons[["X4006.OsiplusJH_72_vs_X4006.Osi_72"]][["contrast"]] <- c("condition","X4006.OsiplusJH_72", "X4006.Osi_72")
-
-
-#5
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]] <- list()
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]][["columns"]] <- c("PC9.Osi_10_day_or_DTC_1", "PC9.Osi_10_day_or_DTC_2", "PC9.Osi_plusJH_10_day_or_DTC_1", 'PC9.Osi_plusJH_10_day_or_DTC_2')
-
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]][["condition"]] <- c("PC9.Osi_10_day_or_DTC", 'PC9.Osi_10_day_or_DTC', 'PC9.Osi_plusJH_10_day_or_DTC','PC9.Osi_plusJH_10_day_or_DTC' 
-)
-
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]][["batch"]] <- c("1","2",
-                                                                '1', '2')
-
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]][["title"]] <- "Change in Expression\nPC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"
-comparisons[["PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC"]][["contrast"]] <- c("condition","PC9.Osi_plusJH_10_day_or_DTC", "PC9.Osi_10_day_or_DTC")
-
-#6
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]] <- list() 
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]][["columns"]] <- c("X4006.Osi_10_day_or_DTC_1", "X4006.Osi_10_day_or_DTC_2", "X4006.Osi_plusJH_10_day_or_DTC_1", 'X4006.Osi_plusJH_10_day_or_DTC_2')
-
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]][["condition"]] <- c("X4006.Osi_10_day_or_DTC", 'X4006.Osi_10_day_or_DTC', 'X4006.Osi_plusJH_10_day_or_DTC','X4006.Osi_plusJH_10_day_or_DTC' 
-)
-
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]][["batch"]] <- c("1","2",
-                                                                    '1', '2')
-
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]][["title"]] <- "Change in Expression\nX4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"
-comparisons[["X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC"]][["contrast"]] <- c("condition","X4006.Osi_plusJH_10_day_or_DTC", "X4006.Osi_10_day_or_DTC")
 
 ### Comparison End ##
 
 
-cts.file <- "/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/STAR_Gene_Counts.csv"
+cts.file <- "STAR_Gene_Counts.csv"
 cts <- read.table(cts.file,sep=",",header=TRUE,stringsAsFactors=FALSE)
 
 any(duplicated(rownames(cts$Gene_ID)))
@@ -178,7 +113,7 @@ for (comparison in names(comparisons)) {
     print(p)
     dev.off()
     
-    # sig <- read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/signature_list120121.csv')
+    # sig <- read.csv('signature_list120121.csv')
     # yap1.sig <- sig$YAP1_FINAL[which(sig$YAP1_FINAL != "")]
     # ggSig.df[ggSig.df$Gene %in% yap1.sig,]$Labels <- ggSig.df[ggSig.df$Gene %in% yap1.sig,]$Gene
     # ggSig.df$YAP1 <- ifelse(ggSig.df$Labels== "", "N/A", "YAP1")
@@ -254,8 +189,8 @@ for (comparison in names(comparisons)) {
     gene.list <- na.omit(log2.fds)
     gene.list = sort(gene.list, decreasing = TRUE)
 
-    gmt <- read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/hallmark.gmt")
-    pgmt <-read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/c2.cp.v2022.1.Hs.symbols.gmt")
+    gmt <- read.gmt("hallmark.gmt")
+    pgmt <-read.gmt("c2.cp.v2022.1.Hs.symbols.gmt")
     egmt <- GSEA(gene.list, TERM2GENE=gmt,minGSSize =6,
                  pvalueCutoff = 0.05,pAdjustMethod = "fdr")
     pdf(paste0(comparison, "_gseaHallmark.pdf"),width=12,height=10)
