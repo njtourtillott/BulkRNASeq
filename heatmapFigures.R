@@ -9,15 +9,15 @@ library(ggrepel)
 library(dplyr)
 
 ## Load in Log2Fold Chnage data 
-resOrdered.df <- read.delim("/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/PC9.OsiplusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC/PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC.txt",sep="\t")
-samp <- 'PC9.Osi_plusJH_10_day_or_DTC_vs_PC9.Osi_10_day_or_DTC' #enter Sample name here
+resOrdered.df <- read.delim("sample.txt",sep="\t")
+samp <- 'sample' #enter Sample name here
 
 ## Load in Pathways of interest
 # from gmt file
-gmt <- read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/hallmark.gmt") 
+gmt <- read.gmt("/hallmark.gmt") 
 pathway1 <- gmt[gmt$term == 'HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION',]
 # or from String-db
-integrin <- read.delim('/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/String_integrinMediatedSignalingPathway.tsv', sep = '\t')
+integrin <- read.delim('String_integrinMediatedSignalingPathway.tsv', sep = '\t')
 
 
 ## Create dataframe to plot
