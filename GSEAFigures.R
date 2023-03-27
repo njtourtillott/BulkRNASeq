@@ -9,14 +9,14 @@ library(ggrepel)
 library(dplyr)
 
 # Read in GMT and Gene LFC data
-gmt <- read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/hallmark.gmt")
-resOrdered.df <- read.delim("/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/X4006.OsiplusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC/X4006.Osi_plusJH_10_day_or_DTC_vs_X4006.Osi_10_day_or_DTC.txt",sep="\t")
-comparison <- '10Day_Overlap_4006'
+gmt <- read.gmt("hallmark.gmt")
+resOrdered.df <- read.delim("sample.txt",sep="\t")
+comparison <- 'sample'
 
 #read in overlap genes to list
-compUp <- read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/GeneLists/10DayUpRegulatedOverlap.csv')
+compUp <- read.csv('UpRegulatedOverlap.csv')
 up.genes <- compUp$X
-compDown <-read.csv('/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/overlappingGenes/GeneLists/10DayDownRegulatedOverlap.csv')
+compDown <-read.csv('10DayDownRegulatedOverlap.csv')
 down.genes <-compDown$X
 #combine up and down overlaps 
 gene.overlap <- c(up.genes, down.genes)
