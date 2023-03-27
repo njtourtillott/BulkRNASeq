@@ -11,8 +11,8 @@ library(dplyr)
 
 
 # Load In data
-resOrdered.df <- read.delim("/Users/nt788/Desktop/RNA_Seq/Bulk/OsiPlusJH/X4006.OsiplusJH_24_vs_X4006.Osi_24/X4006.OsiplusJH_24_vs_X4006.Osi_24.txt",sep="\t")
-comp <- 'X4006.OsiplusJH_24_vs_X4006.Osi_24'
+resOrdered.df <- read.delim("sample.txt",sep="\t")
+comp <- 'sample'
 
 # Filter Data & run GSEA
 log2.fds <- resOrdered.df$log2FoldChange
@@ -20,8 +20,8 @@ names(log2.fds) <- rownames(resOrdered.df)
 gene.list <- na.omit(log2.fds)
 gene.list = sort(gene.list, decreasing = TRUE)
 
-gmt <- read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/hallmark.gmt")
-pgmt <-read.gmt("/Users/nt788/Desktop/RNA_Seq/Bulk/20MSTO/c2.cp.v2022.1.Hs.symbols.gmt")
+gmt <- read.gmt("hallmark.gmt")
+pgmt <-read.gmt("c2.cp.v2022.1.Hs.symbols.gmt")
 egmt <- GSEA(gene.list, TERM2GENE=gmt,minGSSize =6,
              pvalueCutoff = 0.05,pAdjustMethod = "fdr")
 
